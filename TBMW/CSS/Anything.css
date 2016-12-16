@@ -1,0 +1,226 @@
+body{
+	background-image: url("../Img/clouds.jpg");
+	background-position: center;
+	background-repeat: repeat;
+	background-size: center;
+	padding-top: 70px;
+
+}
+
+h1{
+	font-size: 70px;
+  color: black;
+  font-family: 'Aref Ruqaa', serif;
+  font-weight: ;
+
+}
+
+h2{
+	color: #800000;
+}
+
+h3{
+	color: #FFFF00;
+}
+
+h4{
+	color: red;
+}
+
+p{
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+a{
+	color: black;
+}
+
+li{
+	color: purple;
+}
+
+img{
+	/*max-width: 50vw;
+	max-height: 50vh;
+	width: 50vw;
+	padding: 20px 40px 60px 80px;
+	margin: 50px;
+	border: 10px black solid;*/
+}
+
+.quote{
+  height: 150px;
+}
+
+.pic{ 
+  width:400px; height:217px; background: url(http://www.corelangs.com/css/box/img/tiger.png) no-repeat; 
+  } 
+
+.text{ 
+    width:340px; height:217px; background:#FFF; opacity:0; 
+    } 
+
+.pic:hover .text { 
+  opacity:0.6; text-align:justify; color:#000000; font-size:20px; font-weight:700; font-family:"Times New Roman", Times, serif; padding:30px; 
+} 
+
+
+.con0{
+  margin-left: 5%;
+
+}
+
+.con1{
+  margin-left: 5%;
+}
+
+.pod{
+ margin-right: -1%;
+}
+
+
+.landing{
+  width: 100%;
+}
+
+#second{
+	color: black;
+	font-family: "CaviarDreams"
+}
+
+.Style101{
+	text-decoration: underline;
+	font-size: 20px
+}
+
+.Box{
+	width: 50vw;
+	margin: 50px auto;
+}
+
+.sidebar{
+	overflow: scroll;
+	height: 500px;
+  width: 363px;
+  margin-left: 4%;
+}
+
+.navbar{
+  font-family: 'Dosis', sans-serif;
+  font-size: 140%;
+}
+
+.navbar-brand{
+  font-size: 130%;
+  font-weight: bolder;
+  color: #2FF231;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #52E554;
+}
+
+.navbar-default{
+  background-color: red;
+}
+
+.video{
+  position: relative;
+  padding-bottom: 56.45%;
+  height: 0;
+}
+}
+
+.container{
+  padding-bottom: 20px;
+}
+
+#projects{
+  height: 95vh;
+}
+
+.thumbnail2{
+
+}
+
+.rowtwo{
+  height: 90vh;
+}
+
+/*START OF JS RANDOM GENERATOR*/
+
+#quoteGenius{
+  font-size: 50px;
+  color: black;
+  font-family: 'Aref Ruqaa', serif;
+  font-weight: bolder;
+
+}
+
+.special{
+  font-size: 20px;
+  color: black;
+  font-family: 'Aref Ruqaa', serif;
+  font-weight: bolder;
+}
+
+button{
+border: 0px;
+border-radius: 100%;
+background-size: cover;
+width: 300px;
+height: 300px;
+
+}
+
+#boybut{
+  background-image: url(../Img/boy.jpg);
+  margin-top: 30px;
+}
+
+#girlbut{
+  background-image: url(../Img/girl.jpg);
+  margin-top: 30px;
+}
+
+
+/*START OF OVERLAY*/
+
+/*.button{ 
+  width: 150px; 
+  padding: 10px; 
+  background-color: #FF8C00; 
+  box-shadow: -8px 8px 10px 3px 
+  rgba(0,0,0,0.2); 
+  font-weight:bold; 
+  text-decoration:none; 
+} 
+
+#cover{ 
+  position:fixed; top:0; left:0; background:rgba(0,0,0,0.6); z-index:5; width:100%; height:100%; display:none; 
+} 
+
+#loginScreen{ 
+  height:380px; width:340px; margin:0 auto; position:relative; z-index:10; display:none; background: url(login.png) no-repeat; border:5px solid #cccccc; border-radius:10px; 
+} 
+
+#loginScreen:target, #loginScreen:target + #cover{ 
+  display:block; opacity:2; 
+} 
+
+.cancel { 
+  display:block; 
+  position:absolute; 
+  top:3px; 
+  right:2px; 
+  background:rgb(245,245,245); 
+  color:black; 
+  height:30px; 
+  width:35px; 
+  font-size:30px; 
+  text-decoration:none; 
+  text-align:center; 
+  font-weight:bold; 
+} */
