@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Mosque Where</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/b.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img1/gps.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>	
+ 
+
+	
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img1/gps.png" id="hi"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="mosqueWhere.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+        <li><a href="prayer-Times.html">Prayer Times <span class="glyphicon glyphicon-time" aria-hidden="true"></span></a></li>
+        <li class="active"><a href="findYourMosque.html">Find Your Mosque <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</a>
+  
+  <div class="container">
+    <div id="lol" class="page-header">
+    <h1>B</h1>
+  </div>
+    <div class="row">
+      <div class="col-md-9">
+  <table id="table" class="table table-bordered">
+    <tr>
+      <th>Name of Mosque</th>
+      <th>Name of District</th>
+      <th>Address of Mosque</th>
+    </tr>
+    <tr>
+      <td>Ba’alwie Mosque</td>
+      <td>South</td>
+      <td>2 Lewis Rd, Singapore 258590</td>
+    </tr>
+  </table>
+</div>
+<div class="col-md-3">
+<button type="button" id="bruh1" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">View Mosque</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <img id="k" src="img1/bm.jpg">
+    </div>
+  </div>
+</div>
+<div class="btn-group">
+  <a id="bruh1" href="https://www.google.com.sg/maps/place/Ba'alwi+Mosque/@1.3206886,103.8203422,17z/data=!3m1!4b1!4m5!3m4!1s0x31da19f895c7835d:0xfdef8207792f907b!8m2!3d1.3206886!4d103.8225309" type="button" class="btn btn-default" aria-haspopup="false" aria-expanded="false">
+    View on Map
+  </a>
+  </div>
+      </div>
+    </div> 
+  </div>
+
+<script $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+}) type="text/javascript"></script>

@@ -1,0 +1,34 @@
+body {   
+	  background: linear-gradient(to bottom right, #0DFFB5, #5AFF3B);
+	  background-repeat: no-repeat;
+	  height: 150vh;
+}
+#hi {width: 50px;margin-top:-10px;}
+.prayertimes{
+	font-size: 1.5em;
+	background-color: white;
+	border-radius: 10%;
+	width:20%;
+	margin-bottom:50px;
+}
+#bye{
+	font-family: 'Mirza', cursive;
+	text-align: center;
+}
+#bye1{
+	 font-family: 'Space Mono', monospace;
+	 text-align: center;
+}
+#k{
+	align-self: center;
+	text-align: center;
+}
+#bruh{
+	 margin-top:40px;
+}
+#bruh1{
+	  margin-top:40px;
+}
+.container{
+	margin-top: 30px;
+}

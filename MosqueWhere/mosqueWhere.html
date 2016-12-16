@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Mosque Where.sg</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/mosque.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img1/gps.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>	
+ 
+
+	
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img1/gps.png" id="hi"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+        <li><a href="prayer-Times.html">Prayer Times <span class="glyphicon glyphicon-time" aria-hidden="true"></span></a></li>
+        <li><a href="findYourMosque.html">Find Your Mosque <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</a>
+<div class="jumbotron text-center">
+  <h1 class="animated flip" id="bye">Mosque Where<img id="hi" src="img1/gps.png"></h1>
+  <p><h2 id="bye1">Find Any Mosque In A Blink Of An Eye</h2></p>
+  <p><a class="btn btn-primary btn-lg" href="findYourMosque.html" role="button">Find Mosque</a></p>
+
+</div>
+<h2 id="k">Today's Prayer Times</h2>
+<div class="container prayertimes">
+  <p id="fajrTime"></p>
+  <p id="dhuhrTime"></p>
+  <p id="asrTime"></p>
+  <p id="maghribTime"></p>
+  <p id="ishaTime"></p>
+</div>
+    
+    <script src="PrayerTimes.js"></script>
+    <script type="text/javascript">
+    prayTimes.setMethod('Egypt');
+     var times = prayTimes.getTimes(new Date(), [1.2896700, 103.8500700], 8);
+     document.getElementById("fajrTime").innerHTML = "Subuh: " + times.fajr;
+      document.getElementById("dhuhrTime").innerHTML = "Zuhur: " + times.dhuhr;
+       document.getElementById("asrTime").innerHTML = "Asar: " + times.asr;
+      document.getElementById("maghribTime").innerHTML = "Maghrib: " + times.maghrib;
+      document.getElementById("ishaTime").innerHTML = "Isha: " + times.isha;
+    </script>
+
+
+  </body>
+  </html>

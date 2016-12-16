@@ -1,0 +1,12 @@
+body{background-image:url("../img1/masjid.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#hi {width: 50px;margin-top: -10px;}
+#ctn{
+	border: solid:gold;
+}
+#table{
+		color: #40e0d0;
+		font-size: 40px;
+}
