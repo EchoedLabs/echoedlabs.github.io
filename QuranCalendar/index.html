@@ -1,24 +1,154 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>websitepro</title>
-	</head>
-<body>
-	<a href="#bottom">go to bottom</a>
-<h1>hi, my name is huzaifah</h1>
-<p>I am currently studying in Madrasah Aljunied Al-Islamiah</p>
+		<title>Muslim in Progress</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 
-<a href="y8.com"><img width="500" height="1000" src="img/penguins.jpg"/></a><br/>
-<a href="styled.html">stylomilo</a>
-<a href="#top">go to top</a>
-<p id="bottom"> </p>
-<p>This is a list</p>
-<ol>
-	<li><a href="y8.com">cheese</li>
-	<li>chocolate<a href="y8.com"></li>
-	<li>syrup<a href="y8.com"></li>
-	<li>sweets<a href="y8.com"></li>
-	<li>oil<a href="y8.com"></li>
-</ol>
-</body>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+			$( document ).ready(function() {
+			 	$('.date').datepicker()
+			});
+		</script>
+	</head>
+<body style="font-family: 'Aref Ruqaa', serif;">
+	<div class="container">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="jumbotron">
+  <h1 id="open">Memorising Quran Calendar <img src="img/icon.jpg" id="pic"></h1>
+</div>
+	<!--<div class="container">
+		<div class="row">
+			<div class="col-md-4"><p>limausirappedasmanismahsuri</p></div>
+			<div class="col-md-6"><p>limausirappedasmanismahsuri</p></div>
+			<div class="col-md-2"><p>limausirappedasmanismahsuri</p></div>
+		</div>
+	</div>-->
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active tabtitle"><a href="#readAmt" aria-controls="home" role="tab" data-toggle="tab">Read Amount</a></li>
+    <li role="presentation" class="tabtitle"><a href="#dateDone" aria-controls="profile" role="tab" data-toggle="tab">Date Done</a></li>
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="readAmt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Read Amount</h1>
+              <p class="lead"> 
+                  When Do You Want To Memorise The Qur'an By??
+              </p> 
+              <div class="input-group date" data-provide="datepicker">
+                <input id="datechoser" type="text" class="form-control">
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-th"></span>                    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              
+
+              <div id="messages">
+                <h1 id="jeff">I need to...</h1>
+                <p id="message" class="msg"></p>
+                <p id="message2" class="msg"></p>
+                <P id="message3" class="msg"></P>
+              </div>
+            </div>
+          </div>
+          <br />
+          <button onclick="run()" class="btn btn-primary">Calculate</button>
+
+        </div>      
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="dateDone">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Date Done</h1>
+              <p class="lead"> 
+                  How Many Page(s) Of the Qur'an Do You Want To Memorise Per Day??
+              </p> 
+                <input type="text" id="werewolf" class="form-control">
+
+          </div>
+          <div class="col-md-6">
+              <div id="messages1">
+                <h1 id="jeff">I need to...</h1>
+                <p id="message4" class="msg"></p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <button onclick="run1()" class="btn btn-primary">Calculate</button>
+
+        </div>      
+
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+   
+    </body>
+
+        <script type="text/javascript">
+          function run(){
+            //alert("test")
+            var chosenDate=document.getElementById("datechoser").value;
+            var parts = chosenDate.split('/');
+            //please put attention to the month (parts[0]), Javascript counts months from 0:
+            // January - 0, February - 1, etc
+            var date = new Date(parts[2],parts[0]-1,parts[1]); 
+            var currDate = new Date();
+            var dateDiffInMili = date-currDate;
+
+            var dateDiffInDays = dateDiffInMili / (1000 * 60 * 60 * 24);
+
+            var numberOfDaysPerPage = dateDiffInDays / 604;
+            var numberOfDaysPerJuz = dateDiffInDays / 30;
+            var numberOfPagePerDay = 604 / dateDiffInDays;
+            //var division=x/y;
+
+            document.getElementById("message").innerHTML=numberOfDaysPerJuz.toFixed(2)+" day(s) recommended to spend your time for each Juz";
+            document.getElementById("message2").innerHTML=numberOfDaysPerPage.toFixed(2) +"day(s) recommended to spend your time for each pages";
+            document.getElementById("message3").innerHTML=numberOfPagePerDay.toFixed(2) +"page(s) recommended to be memorised each day";
+            document.getElementById("messages").style.display="block";
+
+          }
+
+          function run1() {
+
+            var noOfPagePerDay=document.getElementById("werewolf").value;
+            var noOfDaysToGo = 604/noOfPagePerDay;
+
+            document.getElementById("message4").innerHTML="You Will Complete Memorising In "+noOfDaysToGo.toFixed(0)+" Days";
+            document.getElementById("messages1").style.display="block";
+          }
+        </script>
+
 </html>
