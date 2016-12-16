@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/animate.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    </head>
+
+    <body>
+
+    	<div class="navbar-fixed z-depth-3">
+	  <nav>
+	    <div class="nav-wrapper teal darken-2">
+	      <a href="index.html" class="brand-logo center">ISLAMIC REMINDERS.SG</a>
+	      <ul id="nav-mobile" class="left hide-on-med-and-down">
+	      </ul>
+
+	      <a href="#top">
+	      <i class="material-icons" id="hicon">home</i></a>
+	    </div>
+	  </nav>
+	     </div>
+     
+     <div class="container center-align section">
+     <p class="center" id="hd1">I'm feeling...</p>
+
+     <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn-large teal darken-2 center-align waves-effect waves-light' href='#' data-activates='dropdown1' id="dp1">Happy</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!" onclick="run('happy')">Happy</a></li>
+    <li><a href="#!" onclick="run('hopeless')">Hopeless</a></li>
+    <li><a href="#!" onclick="run('angry')">Angry</a></li> 
+    <li><a href="#!" onclick="run('bored')">Bored</a></li>
+    <li><a href="#!" onclick="run('afraid')">Afraid</a></li>
+  </ul>  
+
+
+  </div>
+
+      <!-- Quote of the Day -->
+
+ <div class="carousel carousel-slider center teal darken-2 z-depth-3" data-indicators="true" id = "car">
+    <div class="carousel-item white-text hd2" href="#one!">
+      <h2 >Quote of the Day</h2>
+
+      <p class="white-text dayquote">"Surely silence is the most eloquent reply."
+      <p></p>
+      <p class="center-align test">- Ali Ibn Talib r.a.</p></p>
+    </div>
+    <div class="carousel-item white-text" href="#two!">
+      <h2 class="hd2">Quote of the Day</h2>
+      <p class="white-text dayquote">"Be in this world like  a stranger, or one who is passing through." 
+            <p></p>
+      <p class="center-align test">- (Sahih Bukhari)</p></p>
+    </div>
+    <div class="carousel-item white-text dayquote" href="#three!">
+      <h2 class="hd2">Quote of the Day</h2>
+      <p class="white-text ">"So what if this life isn't perfect? It's not Jannah." 
+            <p></p>
+      <p class="center-align test">- Nouman Ali Khan</p></p>
+    </div>
+  </div>
+
+
+    <a id="abt" href="about.html">About</a>
+
+
+  <div id = "bot">
+	  <div class="container section center-align" id = "enjoy">
+	  <h3 id="vidtitle">Enjoy!</h3>
+	  <div id = "box" class=" z-depth-2"></div>
+
+	  </div>
+
+
+	  <div class="container center-align" id="bottom">
+	   <a href ="#top" id="gtt">Go to Top</a>
+	   </div>
+
+   </div>
+
+
+   <!-- Start javascript of functions -->
+   	<script type="text/javascript">
+
+   	function run(mood) {
+
+   		 document.getElementById('bot').style.display = "block";
+   		   $('html, body').animate({
+        scrollTop: $("#bottom").offset().top
+    			}, 1000);
+
+   		if (mood == "happy") {
+
+
+    			var randomno = Math.floor((Math.random() * 4) + 1); 
+    			document.getElementById("vidtitle").innerHTML = "Awesome!";
+
+    			if (randomno == 1) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/hxkzc54k0uI" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 2) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/YsFNWzOPvZA" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 3) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/B0GK6MiOZHA" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 4) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/VJddtIe0ZVM" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+   		}
+
+   		else if (mood == "hopeless") {
+
+
+   			document.getElementById('dp1').innerHTML = "Hopeless";
+   			   			  
+
+   			   			    var randomno = Math.floor((Math.random() * 4) + 1); 
+   			   			    document.getElementById("vidtitle").innerHTML = "Pain is real. But so is hope.";
+
+    			if (randomno == 1) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/Eyk4cLSm2js" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 2) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/hR1LNvOZEmQ" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 3) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/Ozu7w4Km28k" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 4) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/e342DlpoLT4" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+
+   		}
+
+   				else if (mood == "angry") {
+
+   			document.getElementById('dp1').innerHTML = "Angry";
+
+
+   			   			    var randomno = Math.floor((Math.random() * 4) + 1); 
+   			   			    document.getElementById("vidtitle").innerHTML = "So remember Me; I will remember you. (2:152)";
+
+
+    			if (randomno == 1) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/lhF8iDJIM_M" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 2) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/hmdOboSsDi4" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 3) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/YsFNWzOPvZA" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 4) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/YqeePi2T7f8" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+
+   		}
+
+   				else if (mood == "bored") {
+
+   			document.getElementById('dp1').innerHTML = "Bored";
+
+
+   			   			    var randomno = Math.floor((Math.random() * 4) + 1); 
+   			   			    document.getElementById("vidtitle").innerHTML = "Bored? Have a look at these videos!";
+
+    			if (randomno == 1) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/trmGbK7wVcs" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 2) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/-nm3lSE4Urs" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 3) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/WGPA0wDUPOg" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 4) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/NKHG3tj75ZY" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+
+   		}
+
+   				else if (mood == "afraid") {
+
+   			document.getElementById('dp1').innerHTML = "Afraid";
+
+   			   			    var randomno = Math.floor((Math.random() * 4) + 1);
+   			   			   document.getElementById("vidtitle").innerHTML = "Surely, Allah is with the patient. (2:153)"; 
+
+    			if (randomno == 1) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/ab9SFslS9bo" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 2) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/P_C8KRFF1Dw" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 3) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/mM9dM6noNaI" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+    			else if (randomno == 4) {
+
+    				document.getElementById("box").innerHTML = '<iframe id = "vid" width="560" height="315" src="https://www.youtube.com/embed/_40SG97JsAE" frameborder="0" allowfullscreen></iframe>'
+
+    			}
+
+
+   		}
+
+   }
+
+
+   	</script> <!-- End of features javascript --> 
+
+   	<!-- carousel feature -->
+   	<script type="text/javascript">$('.carousel.carousel-slider').carousel({full_width: true});
+   	 $(document).ready(function(){
+        $('.carousel.carousel-slider').carousel({dist:0});
+        window.setInterval(function(){$('.carousel.carousel-slider').carousel('next')},10000)
+     });</script>
+
+   	<!-- Parallax feature -->
+   	<script type="text/javascript">  $(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+
+    </body>
+
+    
+  </html>

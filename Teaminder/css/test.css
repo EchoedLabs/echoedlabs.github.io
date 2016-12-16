@@ -1,0 +1,136 @@
+body {
+  background-image: url("../res/Pat1.png");
+  background-size: cover;
+    min-height: 200vh;
+
+}
+
+.brand-logo {
+  font-weight: 600;
+}
+
+#abt {
+  font-weight: 200;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  text-decoration: underline;
+  color: black;
+  position: fixed;
+}
+
+#hd1 {
+  font-weight: 300;
+  font-size: 49px;
+  display: inline-block;
+  margin-top: 20%;
+}
+
+#hd2 {
+  font-weight: 200;
+  margin-top: 0px;
+}
+
+#dayquote {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 650px;
+}
+.section {
+  /* min-height: 100vh */
+  z-index: 3;
+  position: relative;
+}
+
+#dp1 {
+  font-size: 32px;
+  width: 250px;
+  min-height: 36px;
+  margin-top: -42px;
+  margin-left: 30px;
+  font-weight: 600px;
+}
+
+#dropdown1 {
+  margin-left: 30px;
+  margin-top: 12px;
+}
+
+#vidtitle {
+  margin-top: 10%;
+  padding-bottom: 16px;
+  font-weight: 200;
+}
+
+#gtt {
+
+  margin-bottom: 12px;
+  text-decoration: underline;
+  color: black;
+}
+
+#vid {
+  margin-top: 32px;
+}
+
+#bread {
+  margin-left: 16px;
+}
+
+#atext {
+  max-width: 650px;
+}
+
+#hicon {
+  margin-left: 32px;
+}
+
+#box {
+  width: 560px;
+  height: 380px;
+  text-align: center;
+  margin: 0px auto;
+  background-color: black;
+  z-index: 3;
+}
+
+iframe {
+  margin-bottom: 50px;
+  z-index: 3;
+}
+
+#bot {
+  display: none;
+}
+
+#car {
+  max-height: 175px;
+  margin-bottom: 10%;
+
+}
+
+.carousel.carousel-slider .carousel-item h2 {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 32px;
+}
+
+#enjoy {
+  min-height: 100vh;
+}
+
+#pax1 {
+  min-height: auto;
+}
+
+.parallax.pax2{
+  background-image: url(res/Pat1.png);
+  min-height: auto;
+}
+
+
