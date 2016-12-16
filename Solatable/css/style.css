@@ -1,0 +1,32 @@
+.section{
+	min-height:100vh;
+	padding-top:40px;
+	text-align: center;
+}
+
+.h1{
+	font-style: 
+}
+.lead{
+	color: #B22203;
+}
+
+#dp{
+	width:250px;
+	border-radius: 50%;
+	margin-top: 125px;
+}
+
+#projects{
+	background-color: #E3E4A9  
+}
+
+#cr{
+	background-color:  #D2DCE1
+}
+
+#footer{
+	text-align: center;
+	margin: 250px;
+	color: #091756  
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Draft</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style>
+    #travel2{
+      
+    }
+    .section{
+      min-height: 100vh;
+      min-width: 100vw;
+      padding-top: 70px;
+      margin-top: -10px;
+      margin-bottom: -10px;
+     
+    }
+
+    .instruction{
+      display: none;
+    }
+
+    #image{
+      max-width: 20%;
+      padding-top: 40px;
+    }
+
+    .hi{
+      min-height: 100vh;
+      padding-top: 50px;
+      text-align: center;
+      
+    }
+
+    .he{
+      background-color: #47B57C
+      
+
+    }
+
+    .hu{
+      background-color: #E95E40
+    }
+
+    .ho{
+      background-color: #8DB8FF
+    }
+
+    .ha{
+      background-color: #FED347
+    }
+    #sick2{
+      margin-top: 5px;
+    }
+
+    .text{
+
+      margin-top: 10px;
+    }
+
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SOLATABLE</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+           <li class="active"><a href="#about">About<span class="sr-only">(current)</span></a></li>
+
+         </ul>
+       </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+   </nav>
+
+<!-- Header -->
+  <div class="text-center"> <img src="img/logo.png" id="image">
+    <p class="lead">So you think you are excused from solat? Think again.</p>
+  </div>
+  <!-- what -->
+  <!-- Home -->
+  <div class=" hi">
+        <!-- Sick Column -->
+    <div id="sick" class="col-md-4 text">
+      <img src="img/sick.jpg" class="img-circle img-thumbnail" style="width:200px;height:200px;">
+      <h2>For the Sick</h2>
+      <p>Methods of prayer for the sick muslims</p>
+      <a href="#sick2" class="btn btn-success" title="See more">See more</a>
+
+    </div>
+    <!-- Travel Column -->
+    <div id="travel" class="col-md-4 text">
+      <img src="img/plane.jpg" class="img-circle img-thumbnail" style="width:200px;height:200px;">
+      <h2>For Travellers</h2>
+      <p>Methods of prayer for the travelling muslims</p>
+      <a href="#travel2" class="btn btn-success" title="See more">See more</a>
+    </div>
+    <!-- Tayamum Column -->
+    <div id="tayammum" class="col-md-4 text">
+      <img src="img/tayammum.jpg" class="img-circle img-thumbnail" style="width:200px;height:200px;">
+      <h2>Tayammum</h2>
+      <p>An alternative method for wudhu'</p>
+      <a href="#tayammum2" class="btn btn-success" title="See more">See more</a>
+    </div>
+  </div>
+
+  <!-- sick page -->
+  
+  <div class="section he" id="sick2">
+    
+
+      <h1 class="text-center">For the Sick</h1>
+      <!-- TYPES -->
+      <div class="text-center">
+      <!-- types -->
+        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+          <button type="button" class="btn btn-success" onclick="sickInst('bedridden')">Bedridden</button>
+
+          <button type="button" class="btn btn-primary" onclick="sickInst('injured')">Injured Lower Body</button>
+
+
+        </div>
+  
+   <!-- instructions -->
+    <div >
+      <h3 id="default-msg" class="text-center ">If your ... is injured, you can pray as follows</h3>
+      <!-- inst -->
+      <div id="inst1" class="instruction">
+        <p class="lead" id="solutions">
+         <p><b>If you are lying on your back, and can move your hands, then do as follows:</b></p>
+         <ol>
+          <li>Face the kiblah</li>
+          <li>Takbiratulihram with niat</li>
+          <li>Recite surah al-Fatihah</li>
+          <li>I'tidal in original position</li>
+          <li>Bend down your head slightly to ruku'</li>
+          <li>Bend down your head slightly further to sujud</li>
+          <li>Return to original position to sit in between two sujuds</li>
+          <li>Turn your body slightly to one side for tashahud awwal/akhir</li>
+          <li>Return to original position to end off with salaam</li>
+        </ol>
+        </p>
+      </div>
+      <!-- inst -->
+      <div id="inst2"  class="instruction">
+        <ul>
+          <li>If you can only lie on your side, and can move your hands, then do as follows:</li>
+        </ul>
+        <ol>
+          <li>Let your chest face the kiblah</li>
+          <li>Takbiratulihram with niat</li>
+          <li>Recite surah al-Fatihah</li>
+          <li>Bend down your head slightly to ruku'</li>
+          <li>Return to original position for i'tidal</li>
+          <li>Bend down your head slightly further to sujud</li>
+          <li>Return to original position to sit in between two sujuds and for tashahud awwal/akhir</li>
+          <li>End off with salaam</li>
+        </ol>
+      </div>
+<!-- same -->
+      <div id="inst3"  class="instruction">
+      <p>
+        <ul>
+          <li>If you are unable to move you hands, you can pray using your eyes:</li>
+        </ul>
+        <ol>
+          <li>Let your eyes in forward position for i'tidal</li>
+          <li>Let your eyes in downwards position for ruku'</li>
+          <li>Close your eyes for sujud</li>
+        </ol>
+      </p>
+      </div>
+    </div>
+  </div>
+
+<div id="inst4"  class="instruction text-center">
+      <p>
+        <ul>
+          If you are unable to sujud as per normal, you can pray sitting down:
+        </ul>
+      <ul>
+        <li>For first rakat, if you can still stand, you must stand. Afterwards, sitting down is permissible. Slightly bend forward for ruku’ and bend forward almost totally for sujud.</li>
+      </ul>
+      </p>
+      </div>
+    </div>
+  </div>
+    <div class="section hu" id="travel2">
+      <h1 class="text-center">For Travellers</h1>
+
+      <div class="text-center">
+        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+          <button type="button" class="btn btn-success" onclick="instTravel('vehicle')">Prayer in Moving Vehicle</button>
+
+          <button type="button" class="btn btn-primary" onclick="instTravel('qasar')">Jama' Qasar</button>
+        </div>
+      </div>
+
+  <div class="">
+    <h3 id="default-msg" class="text-center ">If you are ... you can pray as follows</h3>
+    <p class="lead" id="equation">
+      <p>
+        <div id="inst5"  class="instruction text-center">
+          <ul>
+           If you are in a Moving Vehicle, solat is accepted if:
+         </ul>
+         <ul> 
+          <li>Time to pray is running out</li>
+          <li>No place to stop</li>
+          <li>Not facing the Qiblah and sitting down is allowed</li>
+        </ul>
+      </div>
+
+      <div id="inst6" class="instruction text-center">
+        <ul>
+         If you are 2 marhalah (80-100km) away from you hometown, you can jama' qasar:
+         <li>Niat must include 2 rakaat (for zuhr, asr, isya'), qasar and jama' taqdim/ta'khir e.g: 2 rakaat of zuhr, jama' qasr taqdim lillhi ta'alah</li>
+         <li>Doing Asr/Isya’ during the time of Zuhur/Maghrib, 2 rakaats (for zuhur, asr, isya’), is called Jama’ Taqdim.</li>
+         <li>Doing Zuhur/maghrib during the time of Asr/isya’, 2 rakaats (for zuhur, asr, isya’) is called Jama’ Ta’khir.</li>
+       </ul>
+     </div>
+  </div>
+    </div>
+  </div>
+
+      <div class="section ho" id="tayammum2">
+        <h1 class="text-center">Tayammum</h1>
+
+        <div class="text-center">
+          <div class="btn-group btn-group-lg" role="group" aria-label="...">
+            <button type="button" class="btn btn-success" onclick="instTayammum('injuries')">Water Sensitive Injuries</button>
+
+            <button type="button" class="btn btn-primary" onclick="instTayammum('water')">Travellers</button>
+          </div>
+        
+        </div>
+
+
+      <div>
+        <h3 id="default-msg" class="text-center ">Alternative methods of whudu' if you...</h3>
+        <p class="lead" id="equation">
+          <p>
+            <div id="inst7" class="instruction text-center">
+              <ol><li>Water Sensitive Injuries
+                <ul>
+                  <li>If Placing water will worsen injury</li>
+                  <li>When sing irremoveable bandage example : cemented cast</li>
+                </ul>
+            </div>
+
+            <div id="inst8"  class="instruction text-center">
+                <li>Travellers
+                  <ul>
+                    <li>When there is no extra water other than that which you will drink</li>
+                  </ul>
+                </ol>
+            </div>
+       </div>
+     </div>
+
+  <div class="container section ha text-center" id="about">
+  <h1> About SOLATABLE</h1>
+  <p>SOLATABLE was created by 3 Secondary Students with big dreams. It's objective is to help muslims with difficulties to perform solat in certain conditions. We hope this website benefits you in the best way possible.
+    Wassalamualaikum </p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+              <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+              <!-- Include all compiled plugins (below), or include individual files as needed -->
+              <script src="js/bootstrap.min.js"></script>
+
+              <script type="text/javascript">
+
+              function sickInst(inst){
+                
+
+                  if (inst=="bedridden") {
+                     document.getElementById("inst4").style.display = "none";
+
+                         document.getElementById("inst1").style.display = "block";
+                          document.getElementById("inst2").style.display = "block";
+                          document.getElementById("inst3").style.display = "block";
+
+
+                    // document.getElementById("inst2").style.display:"block";
+                  } else if (inst=="injured") {
+                                             document.getElementById("inst4").style.display = "block";
+
+
+                         document.getElementById("inst1").style.display = "none";
+                          document.getElementById("inst2").style.display = "none";
+                           document.getElementById("inst3").style.display = "none";
+
+                    // document.getElementById("inst3").style.display:"block";
+                  };
+              }
+
+
+              function instTravel(inst){
+                
+
+                  if (inst=="vehicle") {
+                     document.getElementById("inst5").style.display = "block";
+
+                         document.getElementById("inst6").style.display = "none";
+                          
+
+                    // document.getElementById("inst2").style.display:"block";
+                  } else if (inst=="qasar") {
+                                             document.getElementById("inst6").style.display = "block";
+
+
+                         document.getElementById("inst5").style.display = "none";
+                         
+
+                    // document.getElementById("inst3").style.display:"block";
+                  };
+              }
+
+        function instTayammum(inst){
+
+          if (inst=="injuries") {
+                         document.getElementById("inst7").style.display = "block";
+
+                         document.getElementById("inst8").style.display = "none";
+}
+      else if (inst=="water") {
+                                             document.getElementById("inst8").style.display = "block";
+
+
+                         document.getElementById("inst7").style.display = "none";
+
+          };
+        }
+              </script>
+  </body>
+
+
+</html>
