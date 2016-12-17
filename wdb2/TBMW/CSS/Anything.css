@@ -1,14 +1,14 @@
 body{
-	background-image: url("../Img/clouds.jpg");
-	background-position: center;
-	background-repeat: repeat;
-	background-size: center;
-	padding-top: 70px;
+  background-image: url("../Img/clouds.jpeg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: center;
+  padding-top: 70px;
 
 }
 
 h1{
-	font-size: 70px;
+  font-size: 70px;
   color: black;
   font-family: 'Aref Ruqaa', serif;
   font-weight: ;
@@ -16,38 +16,38 @@ h1{
 }
 
 h2{
-	color: #800000;
+  color: #800000;
 }
 
 h3{
-	color: #FFFF00;
+  color: #FFFF00;
 }
 
 h4{
-	color: red;
+  color: red;
 }
 
 p{
-	color: blue;
-	font-size: 15px;
-	font-weight: bold;
+  color: blue;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 a{
-	color: black;
+  color: black;
 }
 
 li{
-	color: purple;
+  color: purple;
 }
 
 img{
-	/*max-width: 50vw;
-	max-height: 50vh;
-	width: 50vw;
-	padding: 20px 40px 60px 80px;
-	margin: 50px;
-	border: 10px black solid;*/
+  /*max-width: 50vw;
+  max-height: 50vh;
+  width: 50vw;
+  padding: 20px 40px 60px 80px;
+  margin: 50px;
+  border: 10px black solid;*/
 }
 
 .quote{
@@ -86,23 +86,23 @@ img{
 }
 
 #second{
-	color: black;
-	font-family: "CaviarDreams"
+  color: black;
+  font-family: "CaviarDreams"
 }
 
 .Style101{
-	text-decoration: underline;
-	font-size: 20px
+  text-decoration: underline;
+  font-size: 20px
 }
 
 .Box{
-	width: 50vw;
-	margin: 50px auto;
+  width: 50vw;
+  margin: 50px auto;
 }
 
 .sidebar{
-	overflow: scroll;
-	height: 500px;
+  overflow: scroll;
+  height: 500px;
   width: 363px;
   margin-left: 4%;
 }
