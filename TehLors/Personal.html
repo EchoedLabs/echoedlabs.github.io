@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Zikir Counter</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    #default-msg{
+      display: none;
+    }
+    .container{text-align: center;
+      padding-top: 100px;
+    }
+    .form-group{
+      width:50%;
+      margin:10px auto;
+    }
+  </style>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+
+            <a class="navbar-brand" href="#">Zikir Counter</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="container">
+        <h1>Zikir Counter</h1>
+        <p class = "lead">Count how much you have zikir</p>
+
+        <div class= "form-group">
+         <input type="number" name= "weight" id="input" value="0" class="form-control" placeholder= "Zikir Count">
+
+       </div>
+
+       
+
+       <button class="btn btn-default" onclick="increment()">Count My Zikir</button>
+
+       
+       <p class= "lead" id="zikir"></p>
+       <p id="message"></p>
+     </div> 
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>  
+
+     <script type="text/javascript">
+      function increment(){
+        
+        var zikir = document.getElementById("input").value;
+          //alert(zikir)
+
+          zikir = parseInt(zikir)+ 1;
+
+          if(zikir<100){
+
+            msg = "Keep Going! :)";
+
+          } else if(bmi<150){
+
+            msg = "You are Awesome";
+
+          } else {
+
+            msg = "Great Job!";
+
+          }
+
+          document.getElementById("input").value = zikir;
+          document.getElementById("zikir").innerHTML = "current count: "+ zikir + ". " + msg ;
+           // document.getElementById("zikir").style.display = "block";
+
+
+         }
+       </script>
+       <div class="container">
+        <h2>A Muslim's Checklist</h2>
+        <form id="check" action="demo_form.asp" method="get">
+          <input type="checkbox" name="solat" value="jemaah"> I have prayed 5 times a day in Jamaah<br>   
+          <input type="checkbox" name="solat" value="sunnah"> I have prayed sunnah prayers for Subuh<br>
+        </form>
+
+        
+      </div>
+    </body>
+    </html>
