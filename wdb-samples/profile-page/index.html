@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EchoedLabs | Profile Page with Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">My Profile Page</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a data-scroll href="#home">Home</a></li>
+            <li><a data-scroll href="#favourite">About</a></li>
+            <li><a data-scroll href="#project">Projects</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container contentContainer" id="home">
+      <div class="text-center heading">
+        <img src="img/boy.jpg" width="200px" id="profile-img">
+        <h1>Hello, world!</h1>
+        <p class="lead">I'm Bootstrap</p>
+      </div>
+    </div>
+
+    <div class="container contentContainer" id="favourite">
+      <div class="text-center">
+        <h1 class="heading">About Me</h1>
+        <p class="lead">Here are 3 facts about myself</p>
+        
+        <div class="row"  id="favourite-row">
+          <div class="col-md-4 text-center sect">
+            <i class="glyphicon glyphicon-book"></i>
+            <h3>Favourite Subject</h3>
+            <p>My favourite subject is Mathematics. This is so as I find it applicable in my daily life. </p>
+          </div>
+          <div class="col-md-4 text-center sect">
+            <i class="glyphicon glyphicon-cutlery "></i>
+            <h3>Favourite Food</h3>
+            <p>I love to eat Nasi Ayam Penyet. It has been my favourite food since I was 13 years old.</p>
+          </div>
+          <div class="col-md-4 text-center sect">
+            <i class="glyphicon glyphicon-heart"></i>
+            <h3>Favourite Hobby</h3>
+            <p>I have a newly found hobby, and it is coding! I find it amazing how I can create with just a laptop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container contentContainer" id="project">
+      <div class="text-center heading sect">
+        <h1>My Projects</h1>
+        <p class="lead">Check out the projects I created!</p>
+        
+        <div class="row col-md-10 col-md-offset-1"  id="project-row">
+          <div class="col-md-6 sect">
+            <img src="img/bmi.png" width="200px">
+            <h3>BMI Calculator</h3>
+            <p>I created a fully functional BMI calculator with HTML, CSS and JS on my second day of EchoedLab's Web Design Bootcamp.</p>
+            <p><a href="../bmi-calculator/index.html" target="_blank"class="btn btn-success">Check It Out</a></p>
+          </div>
+          <div class="col-md-6 sect">
+            <img src="img/globe.ico" width="200px" class="project-img">
+            <h3>Ramadhan Reminders</h3>
+            <p>I am part of the team that created "Ramadhan Reminders" as our final project in EchoedLab's Web Design Bootcamp.</p>
+            <p><a href="../../index.html" target="_blank" class="btn btn-success">Check It Out</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" id="footer">
+      <p>I coded this website from scratch in Web Design Bootcamp, conducted by <a href="http://echoedlabs.com">EchoedLabs</a>.</p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      smoothScroll.init();
+    </script>
+
+  </body>
+</html>

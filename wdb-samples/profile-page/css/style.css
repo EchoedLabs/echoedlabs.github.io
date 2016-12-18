@@ -1,0 +1,58 @@
+      .heading {
+        margin-top: 150px;
+
+      }
+
+      .sect {
+        margin-bottom:30px;
+      }
+
+      .contentContainer {
+        width:100vw;
+        min-height: 100vh;
+      }
+
+      #footer {
+        padding:35px 0 25px 0;
+        background-color: #F8F8F8; 
+        color: #7c7c7c;
+      }
+
+      #favourite {
+        background-color:#F8FFAE;
+      }
+
+
+      #favourite-row {
+        margin-top: 100px;
+      }
+
+      #project {
+        background: #F8FFAE; /* fallback for old browsers */
+        background: -webkit-linear-gradient( #F8FFAE , #36D7B7); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient( #F8FFAE , #36D7B7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      #project-row {
+        margin-top: 50px;
+      }
+
+      .project-img {
+        border-radius: 15%;
+      }
+
+      #home {
+        padding-top: 40px;
+      }
+
+      #profile-img {
+        border-radius: 50%;
+      }
+
+      .glyphicon {
+        font-size:4em;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 50%;
+        padding: 30px;
+      }
